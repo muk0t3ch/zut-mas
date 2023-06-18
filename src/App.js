@@ -3,7 +3,7 @@ import Main from './dashboard/Main';
 
 function App() {
   return (
-   <Main/>
+   <Login/>
   );
 }
 

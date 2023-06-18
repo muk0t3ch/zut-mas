@@ -15,7 +15,15 @@ app.get('/', (req, res) => {
 });
 
 app.get('/users', (req, res) => {
-  res.sendFile(path.join(__dirname, '../public/users.html'));
+  fetch('http://localhost:3000/adminUsers')
+  .then(response => response.json())
+  .then(data => {
+    console.log(data); // Process the data here
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+
 });
 
 

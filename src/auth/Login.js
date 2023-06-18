@@ -9,8 +9,14 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import { Container } from "@mui/material";
+import {useState} from "react";
 
 export default function SignInSide() {
+
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -64,7 +70,10 @@ export default function SignInSide() {
               }}
             >
               <Typography component="h1" variant="h5">
-                Sign in
+                email: {email}
+              </Typography>
+              <Typography component="h1" variant="h5">
+                Password: {password}
               </Typography>
               <Box
                 component="form"
@@ -81,6 +90,8 @@ export default function SignInSide() {
                   name="email"
                   autoComplete="email"
                   autoFocus
+                  onChange={(e) => setEmail(e.target.value)}
+
                 />
                 <TextField
                   margin="normal"
@@ -91,6 +102,7 @@ export default function SignInSide() {
                   type="password"
                   id="password"
                   autoComplete="current-password"
+                  onChange={(e) => setPassword(e.target.value)}
                 />
                 <FormControlLabel
                   control={<Checkbox value="remember" color="primary" />}
