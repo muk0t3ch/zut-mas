@@ -50,7 +50,7 @@ function Header(props) {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Go to docs
+                Notifications
               </Link>
             </Grid>
             <Grid item>
@@ -79,7 +79,7 @@ function Header(props) {
           <Grid container alignItems="center" spacing={1}>
             <Grid item xs>
               <Typography color="inherit" variant="h5" component="h1">
-                Authentication
+                Admin-Authentication
               </Typography>
             </Grid>
             <Grid item>
@@ -89,7 +89,7 @@ function Header(props) {
                 color="inherit"
                 size="small"
               >
-                Web setup
+                Demo
               </Button>
             </Grid>
             <Grid item>
@@ -104,10 +104,10 @@ function Header(props) {
       </AppBar>
       <AppBar component="div" position="static" elevation={0} sx={{ zIndex: 0 }}>
         <Tabs value={0} textColor="inherit">
-          <Tab label="Users" />
-          <Tab label="Sign-in method" />
-          <Tab label="Templates" />
-          <Tab label="Usage" />
+          <Tab label="Student_Records" />
+        <Tab label="" />
+          <Tab label="" />
+          <Tab label="Add Admin Account" />
         </Tabs>
       </AppBar>
     </React.Fragment>
