@@ -8,15 +8,11 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import HomeIcon from '@mui/icons-material/Home';
+import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
 import PeopleIcon from '@mui/icons-material/People';
 import DnsRoundedIcon from '@mui/icons-material/DnsRounded';
-//import PermMediaOutlinedIcon from '@mui/icons-material/PhotoSizeSelectActual';
-import PublicIcon from '@mui/icons-material/Public';
-import SettingsEthernetIcon from '@mui/icons-material/SettingsEthernet';
-//import SettingsInputComponentIcon from '@mui/icons-material/SettingsInputComponent';
-//import TimerIcon from '@mui/icons-material/Timer';
+import PersonPinIcon from '@mui/icons-material/PersonPin';
 import SettingsIcon from '@mui/icons-material/Settings';
-//import PhonelinkSetupIcon from '@mui/icons-material/PhonelinkSetup';
 
 const categories = [
   {
@@ -24,25 +20,18 @@ const categories = [
     children: [
       {
         id: 'Admin-Authentication',
-        icon: <PeopleIcon />,
+        icon: <AdminPanelSettingsIcon />,
         active: true,
       },
       { id: 'Database', icon: <DnsRoundedIcon /> },
       { id: 'Register Students QR Code', icon: <PeopleIcon /> },
-      { id: 'Hosting', icon: <PublicIcon /> },
-      { id: 'Medical Student Attendance', icon: <SettingsEthernetIcon /> },
-     // {
-       // id: 'Machine learning',
-        //icon: <SettingsInputComponentIcon />,
-      //},
+      { id: 'Medical Student Attendance', icon: <PersonPinIcon /> },
     ],
   },
   {
     id: 'Quality',
     children: [
-      { id: 'Analytics', icon: <SettingsIcon /> },
-     // { id: 'Performance', icon: <TimerIcon /> },
-     // { id: 'Test Lab', icon: <PhonelinkSetupIcon /> },
+      { id: 'Settings', icon: <SettingsIcon /> }
     ],
   },
 ];
